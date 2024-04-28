@@ -15,7 +15,7 @@ export const BackgroundGradientAnimation = ({
   blendingValue = "hard-light",
   children,
   className,
-  interactive = false,
+  interactive = true,
   containerClassName,
 }: {
   gradientBackgroundStart?: string;
@@ -89,13 +89,10 @@ export const BackgroundGradientAnimation = ({
   return (
     <div
       className={cn(
-        "h-screen w-screen overflow-hidden z-0 top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
+        "h-screen absolute w-screen overflow-hidden z-0 top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
       )}
     >
-    <div className="z-10">
-        <div className={cn("", className)}>{children}</div>
-    </div>
       <svg className="hidden">
         <defs>
           <filter id="blurMe">
@@ -114,10 +111,12 @@ export const BackgroundGradientAnimation = ({
           </filter>
         </defs>
       </svg>
-
+      <div className="absolute ">
+        <div className={cn("", className)}>{children}</div>
+      </div>
       <div
         className={cn(
-          "gradients-container h-full w-full blur-lg z-0",
+          "gradients-container relative h-full w-full blur-lg",
           isSafari ? "blur-2xl" : "[filter:url(#blurMe)_blur(40px)]"
         )}
       >
@@ -172,7 +171,7 @@ export const BackgroundGradientAnimation = ({
             ref={interactiveRef}
             onMouseMove={handleMouseMove}
             className={cn(
-              `absolute z-0 [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
+              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
               `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,
               `opacity-70`
             )}
