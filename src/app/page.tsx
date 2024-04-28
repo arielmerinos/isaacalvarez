@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="absolute bottom-4 left-6 text-4xl ">🦿</h1>
           <h1 className="absolute top-0 right-6 text-4xl ">🌸</h1>
         </div>
-        <h1 className="text-center text-2xl font-bold ">
+        <h1 className="text-center text-4xl font-bold bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 ">
           Isaac Álvarez Figueroa
         </h1>
         <h3 className="text-center text-sm mb-4">
