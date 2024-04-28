@@ -50,7 +50,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="https://www.wa.me/525619847656/"
+            href="https://wa.me/525619847656/"
             className=" text-white hover:opacity-50"
           >
             <div className="flex cursor-pointer">
