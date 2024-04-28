@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 
 export default function Home() {
   return (
@@ -65,6 +66,16 @@ export default function Home() {
             </div>
           </Link>
         </div>
+      </div>
+      <div>
+        <ParallaxScroll className="bg-white" images={[
+          "https://scontent.cdninstagram.com/v/t39.30808-6/438828670_18275142604205195_5793143861578707658_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=lMyZZlBbyI8Q7kNvgGLmBa1&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzM1NjE5NzY3OTE4MzY1OTI3NA%3D%3D.2-ccb7-5&oh=00_AfBljxaKctKtRlwrZQW2T_Wx2ms6GX-w0HbAvs2tViB9BA&oe=66343282&_nc_sid=10d13b", 
+          "https://scontent.cdninstagram.com/v/t39.30808-6/432228113_18269623468205195_5650633456084393496_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi44Mjh4ODI4LnNkci5mMzA4MDgifQ&_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=gPbALSlc18cQ7kNvgGLhyPn&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzMyMTAzNDA2NTk3MTYxNzMwMQ%3D%3D.2-ccb7-5&oh=00_AfBipZFD6dQRODXO08YkyzsC2EMKAhsu-z4SbBTKbozk8w&oe=66322E03&_nc_sid=10d13b",
+          "https://scontent.cdninstagram.com/v/t39.30808-6/432226419_18269623105205195_702283881497263027_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi44Mjh4ODI4LnNkci5mMzA4MDgifQ&_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=_ltr1UjqP18Q7kNvgFi7GKF&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzMyMTAzMDM5MDU0NTA5ODIwMg%3D%3D.2-ccb7-5&oh=00_AfCINjseUm2LpzQNrDLVwj3-moZkN2bD03lyV6MfA4IFpg&oe=663223A8&_nc_sid=10d13b",
+          "https://scontent.cdninstagram.com/v/t39.30808-6/428507626_18267221728205195_311344268946994936_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=WiVVqTKbgbQQ7kNvgGZgDMY&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzMwNTY2NTU4MzIyMzAwOTk1MQ%3D%3D.2-ccb7-5&oh=00_AfD0Phzx3VtkL8PZTl-pDlVJe0xnO-o0r3ZjgxqZraHyVQ&oe=66341464&_nc_sid=10d13b",
+          "https://scontent.cdninstagram.com/v/t39.30808-6/426613044_18266077804205195_5382036850146939296_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi44Mjh4ODI4LnNkci5mMzA4MDgifQ&_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=l86LLAaCtSkQ7kNvgGVezD9&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzI5ODU4ODQ3NzE2NjU2NjY2Mg%3D%3D.2-ccb7-5&oh=00_AfB4ZRt9YyP4BdFYVpKK2B71QF0XbjS3HnOBiupGo8NfBQ&oe=663217E4&_nc_sid=10d13b"]}>
+          
+        </ParallaxScroll>
       </div>
     </>
   );

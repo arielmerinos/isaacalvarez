@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+       remotePatterns: [
+        {
+            hostname: 'scontent.cdninstagram.com',
+        }
+        ],
+    },
+};
 
 export default nextConfig;
 
