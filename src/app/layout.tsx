@@ -7,6 +7,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Isaac Alvarez Figueroa",
   description: "Makeup artist and content creator",
+  openGraph: {
+    title: "Isaac Álvarez",
+    description: "Makeup artist and content creator",
+    images: [
+      {
+        url: "https://vihvelibreassets.s3.sa-east-1.amazonaws.com/isaac.png",
+        width: 1200,
+        height: 630,
+        alt: "Isaac Álvarez",
+      },
+    ],
+    locale: "es_MX",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
